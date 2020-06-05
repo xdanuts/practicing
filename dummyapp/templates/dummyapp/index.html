@@ -1,0 +1,134 @@
+{% load static %}
+<head>
+  <title>TTMarket</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="shortcut icon" type="image/png" href="{% static 'dummyapp/favicon1.ico' %}">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-between">
+
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">
+      <span><img src="{% static 'dummyapp/logo1.png' %}" width="110" height="70"></span>
+      TT Market
+    </a>
+  </div>
+<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+  <form style="padding-top:10px;" class="form-inline" action="#">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search...">
+    <button class="btn btn-danger" type="submit">Search</button>
+  </form>
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/spacing.css' %}">
+ <div class="d-flex flex-row">
+  <ul style="padding-top:10px;" class="nav navbar-nav navbar-right">
+
+     <li style="padding-right: 30px; padding-top:7px;">
+      <a href="#"><i class="fa" style="font-size:32px;color:white">&#xf291;</i></a>
+      <span class='badge badge-warning' id='lblCartCount'> 0 </span><br>
+       <p style="padding-left:3px;color:white">Cart</p>
+     </li>
+     <li style="padding-top:10px;">
+       <a href="#">
+        <i style='padding-left:3px;font-size:28px;color:white' class='far'>&#xf007;</i><br>
+       </a>
+        <p style="padding-top:3px;color:white">User</p>
+     </li>
+  </ul>
+ </div>
+</nav>
+
+
+<nav class="navbar navbar-expand-sm bg-danger navbar-dark justify-content-between">
+  <div>
+    <a href="#" class="navbar-brand">Home</a>
+    <a href="#" class="navbar-brand">About Us</a>
+    <a href="#" class="navbar-brand">Contact</a>
+  </div>
+
+    <div>
+      Don't have an account? <a style="color: white;" href="#">Register</a> now!
+    </div>
+</nav>
+
+
+<body>
+<br>
+
+<div class="w3-sidebar w3-light-gray w3-bar-block" style="height: 45%; width:18%">
+  <div class="w3-container w3-black">
+    <h2>☰ Categories</h2>
+  </div>
+
+  <a href="#" class="w3-bar-item w3-button">Category 1</a>
+  <a href="#" class="w3-bar-item w3-button">Category 2</a>
+  <a href="#" class="w3-bar-item w3-button">Category 3</a>
+  <a href="#" class="w3-bar-item w3-button">Category 4</a>
+  <a href="#" class="w3-bar-item w3-button">Category 5</a>
+
+</div>
+
+
+<div style="margin-left:20%">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'dummyapp/tennis1.jpg' %}" alt="Los Angeles" width="1050" height="200">
+      <div class="carousel-caption">
+        <h3>Anouncement</h3>
+        <p>Details</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'dummyapp/tennis2.jpg' %}" alt="Chicago" width="1050" height="200">
+      <div class="carousel-caption">
+        <h3>TTMarket</h3>
+        <p>New products in stock</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'dummyapp/tennis3.jpg' %}" alt="New York" width="1050" height="200">
+      <div class="carousel-caption">
+        <h3>Offers</h3>
+        <p>Free shipping</p>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</div>
+<div style="margin-left:25%">
+    <div style="width: 90%; height: 100%;" class="w3-container w3-teal">
+      <h2>Products list</h2>
+    </div>
+</div>
+</body>
+
+
+ <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Copyright © 2020 TTMarket</span>
+      </div>
+ </footer>
